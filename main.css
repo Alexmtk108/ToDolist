@@ -1,0 +1,307 @@
+.area{
+	display: flex;
+}
+
+.header {
+	height: 80px;
+}
+.icon-plus-circled{
+	font-size: 30px;
+}
+.todayDay {
+	font-size: 80px;
+
+	margin: 0;
+	padding: 0;
+}
+
+
+.today {
+	font-size: 30px;
+
+	margin: 0;
+	padding: 0;
+}
+.today p{
+	font-size: 30px;
+
+	margin: 1px;
+	padding: 0;
+}
+.days{
+	background-color: #e8e8e8;
+	width: 155px;
+	height: 66px;
+	margin: 10px 0;
+	/*display: inline-block;*/
+	/*justify-content: space-between;*/
+	border: 1px solid #fff;
+	border-color: black;
+	/*border-radius: 10px;*/
+	text-align: center;
+	line-height: 66px;/*Высота строки +  верт. центрирования текста*/
+    font-size: 30px
+}
+.days:hover {
+	background-color: white;
+	transition: 0.3s; /* Время эффекта */
+ 	transform: scale(1.2); /* Увеличиваем масштаб */
+ 	border-color: #dcd9d9;
+ 	box-shadow: 8px 8px 5px 5px ;  
+}
+
+.days p{
+	all: initial;
+	line-height: 10px;
+	font-size: 10px;
+}
+.inday{
+	background-color: #555;
+	/*padding: 10px;*/
+	display: flex;
+
+}
+.listcnt{
+	background-color: #000;
+	color:#fff;
+	height: 30px;
+	width: 30px;
+}
+
+.dayss{
+	background-color: #e8e8e8;
+	width: 155px;
+	height: 66px;
+	/*margin: 20px;*/
+	/*display: inline-block;*/
+	/*justify-content: space-between;*/
+	border: 1px solid #fff;
+	border-color: black;
+	/*border-radius: 10px;*/
+	text-align: center;
+	line-height: 66px;/*Высота строки +  верт. центрирования текста*/
+    font-size: 25px
+}
+#years, #months, #days {
+	font-size: 25px;
+	border: none;
+	/*border-color: black;*/
+	/*border-radius: 5px;*/
+	text-align: center;
+	height: 40px;
+	background-color: #ccc7c7;
+
+
+}
+.week {
+	width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	/*justify-content: space-around;*/
+}
+
+.week:last-child{
+	width: 503px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+
+
+.filter{
+	/*display: inline-block;*/
+	display: none;
+	/*margin-left: 80px*/;
+}
+ul { list-style: none; }
+
+.listCategory {
+	display: inline-block;
+	margin: 0 10px 15px 0;
+}
+
+#hideFilter:checked~.filter{
+	display: inline-block;
+}
+#hideFilter:checked~.wrapper .week{
+	width: 1000px;
+	justify-content: space-aroun
+}
+#hideFilter:checked~.wrapper .lastweek{
+	display: flex;
+	width: 430px;
+	justify-content: space-between;
+}
+#hideFilter {
+	display: none;
+}
+#hideList:checked~.list{
+	display: inline-block;
+}
+#hideList:not~.wrapper{
+	display: none;
+}
+#hideList {
+	display: none;
+}
+
+.hidenCat{
+	margin: 43px 0;
+	font-size: 30px;
+	
+}
+
+.list {
+	display: none;
+}
+#dayDate {
+	width: 250px;
+	font-size: 30px;
+}
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+
+}
+
+.wrapper.week{
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+}
+.addbutton{
+	background: none;
+	width: 50px;
+	height: 50px;
+}
+
+.list input{
+	display: flex;
+	height: 70px;
+	width: 500px;
+	margin: 10px 0;
+}
+
+.list form {
+	display: block;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto 0;
+	/*padding: 10px 0;*/	
+}
+.listcase{
+	border: 1px solid black ;
+}
+.bodycase{
+	margin:0 auto;
+	display: inline-block;
+	width: 80%;
+	border: 1px solid #000;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+
+
+hr {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+h1{
+	font-size: 40px;
+	margin: 0;
+	font-family: 'Girassol', cursive;	
+}
+
+body{
+	width: 1200px;
+	padding: 0;
+	margin: 0 auto;/*центрируем ее*/
+    background: #ccc7c7;
+}
+
+/*Responsive*/
+
+
+/*992-1200px*/
+@media screen and (max-width: 1376px) {
+	.container {
+		width: 960px;
+	}
+	.wrapper {
+		
+		/*flex-direction: row;*/
+		/*text-align: center;*/
+	}
+	.offer {
+		width: 100%;
+	}
+	.logo-big {
+		display: block;
+		width: 641px; 
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+	h1 {
+		width: 100%;
+	}
+	.info-1 p {
+		width: auto;
+	}
+	a.btn {
+		margin: 0 auto;
+		width: 400px;
+	}
+	a.btn2 {
+    width: 342px;
+	}
+}
+
+/*768-992px*/
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+}
+
+
+/*576-768px*/
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.logo-big {
+		display: block;
+		width: 100%; 
+		margin: 0 auto;
+}
+
+
+
+/*0-576px*/
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	a.btn {
+		margin: 0 auto;
+		width: 94%;
+	}
+	input {
+		width: 85%;
+	}
+	h2.info {
+		width: 100%;
+	}
+	offer.span {
+		width: 100%;
+	} 
+}

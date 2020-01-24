@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="main.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+	<title>RunList</title>
+</head>
+<body>
+	<div class="header">
+		<a href="index.html"><h1>RunList</h1></a>
+		<!-- <button class="addheader"><img src="add.png" alt="add">Добавить</button> -->
+		<!-- <a href="list.html"><img class="addbutton" src="add.png"></a> -->
+		<label for="hideList" class="hidenList">
+			<i class="icon-plus-circled"></i>
+		</label>
+		<p class="todayDay" >21</p>
+		<div class="today">
+			
+			<p>Суббота</p>
+			<p>22:01</p>
+
+
+		</div>
+		
+		<select id="months">
+			<option>Декабрь</option>
+		</select>
+		<select id="years">
+			<option>2019</option>
+		</select>
+	</div>
+	<hr>
+	<div class="area">
+		<input type="checkbox" id="hideFilter" name="">
+		
+		<div class="wrapper">
+			<div class="week">
+				<h2 class="dayss">Пн</h2>	
+				<h2 class="dayss">Вт</h2>
+				<h2 class="dayss">Ср</h2>
+				<h2 class="dayss">Чт</h2>
+				<h2 class="dayss">Пт</h2>
+				<h2 class="dayss">Сб</h2>
+				<h2 class="dayss">Вс</h2>
+			</div>
+			<div class="week">
+				<div class="inday">
+					<button class="days">1<div class="listcnt">10</div></button>
+					<!-- <div class="listcnt">10</div> -->
+					<!-- <div class="listcnt">20</div>
+					<div class="listcnt">30</div> -->
+				</div>
+				<button class="days">2</button>
+				<button class="days">3</button>
+				<button class="days">4</button>
+				<button class="days">5</button>
+				<button class="days">6</button>
+				<button class="days">7</button>
+			</div>
+			<div class="week">
+				<button class="days">8</button>
+				<button class="days">9</button>
+				<button class="days">10</button>
+				<button class="days">11</button>
+				<button class="days">12</button>
+				<button class="days">13</button>
+				<button class="days">14</button>
+			</div>
+			<div class="week">
+				<button class="days">15</button>
+				<button class="days">16</button>
+				<button class="days">17</button>
+				<button class="days">18</button>
+				<button class="days">19</button>
+				<button class="days">20</button>
+				<button class="days">21</button>
+			</div>
+			<div class="week">
+				<button class="days">22</button>
+				<button class="days">23</button>
+				<button class="days">24</button>
+				<button class="days">25</button>
+				<button class="days">26</button>
+				<button class="days">27</button>
+				<button class="days">28</button>
+			</div>
+			<div class="week lastweek" id="dLast">
+				<button class="days">29</button>
+				<button class="days">30</button>
+				<button class="days">31</button>
+			</div>
+		
+		</div>
+		<label for="hideFilter" class="hidenCat">
+			<i class="icon-right-open"></i>
+			
+		</label>	
+
+		<div class="list">
+			<form>
+				<input type="text" name="list1">
+			</form>
+
+			<form>
+				<input type="text" name="list2">
+			</form>
+
+			<form>
+				<input type="text" name="list3">
+			</form>
+
+			<form>
+				<input type="text" name="list4">
+			</form>
+
+			<form>
+				<input type="text" name="list5">
+			</form>
+		</div>
+		
+		<div class="filter">
+			<h2>Категории</h2>
+			<div class="listCategory">
+				<ul>
+					<li><p>10</p> Работа</li>
+					<li>Семья</li>
+					<li>Личное</li>
+				</ul>
+				
+			</div>	
+		</div>
+	</div>
+	<input type="checkbox" id="hideList" name="">
+	<div class="list">
+			<form>
+				<input type="text" name="list1">
+				<input type="date" name="" id="dayDate">
+				<label for="hideList" class="hidenList">
+					<button>X</button>
+				</label>
+				<button>Edit</button>
+				<button>Del</button>
+				<button>Alarm</button>
+			</form>
+	</div>
+	<div class="listcase">
+		<div class = "category1">
+			<h2 > Категория 1	</h2>
+				<div class ="bodycase">
+					<p id='1'> Дело номер 1 категории 1</p>
+					<button>Edit</button>
+					<button>Del</button>
+					<button>Alarm</button>
+				</div>
+				<div class ="bodycase">
+					<p id='1'> Дело номер 2 категории 1</p>
+					<button>Edit</button>
+					<button>Del</button>
+					<button>Alarm</button>
+				</div>
+				<div class ="bodycase">
+				<p id='1'> Дело номер 3 категории 1</p>
+					<button>Edit</button>
+					<button>Del</button>
+					<button>Alarm</button>
+				</div>
+				<div class ="bodycase">
+				<p id='1'> Дело номер 4 категории 1</p>
+					<button>Edit</button>
+					<button>Del</button>
+					<button>Alarm</button>
+				</div>
+		</div>
+		<div class = "category2">
+			<h2 > Категория 2	</h2>
+				<div class ="bodycase">
+					<p id='1'> Дело номер 1 категории 2</p>
+					<button>Edit</button>
+					<button>Del</button>
+					<button>Alarm</button>
+				</div>
+				<div class ="bodycase">
+					<p id='1'> Дело номер 2 категории 2</p>
+					<button>Edit</button>
+					<button>Del</button>
+					<button>Alarm</button>
+				</div>
+				<div class ="bodycase">
+				<p id='1'> Дело номер 3 категории 2</p>
+					<button>Edit</button>
+					<button>Del</button>
+					<button>Alarm</button>
+				</div>
+				<div class ="bodycase">
+				<p id='1'> Дело номер 4 категории 2</p>
+					<button>Edit</button>
+					<button>Del</button>
+					<button>Alarm</button>
+				</div>
+		</div>
+			
+	</div>
+
+</body>
+</html>
